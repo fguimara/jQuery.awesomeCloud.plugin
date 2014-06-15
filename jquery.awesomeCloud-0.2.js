@@ -254,7 +254,7 @@ Extra Thanks:
                 "highest" : null,
                 "average" : null
             };
-            this.container.children().each( function( i, e ) {
+            this.container.children("[data-weight]").each( function( i, e ) {
                 link = null ; tag = null;
                 currentWeight = parseInt( $( this ).attr( "data-weight" ), 10 );
                 runningTotal += currentWeight;
